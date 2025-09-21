@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AddInput from "../AddInput/AddInput";
 import Header from "../Header/Header";
 import TodoList from "../TodoList/TodoList";
@@ -9,7 +9,7 @@ function Todo() {
 
   return (
     <div className="todo">
-      <Header title="Todo" />
+      <Header title="My ToDo List" />
       <AddInput setTodos={setTodos} todos={todos} />
       <TodoList todos={todos} setTodos={setTodos} />
     </div>
